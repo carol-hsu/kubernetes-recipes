@@ -1,4 +1,4 @@
-service ‘etcd’ do
+service 'etcd' do
 	action :start
 end
 
