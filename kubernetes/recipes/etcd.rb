@@ -17,7 +17,3 @@ template "/etc/init.d/etcd" do
 	source "etcd.erb"
 end
 
-service "etcd" do
-	action [:enable, :start]
-	subscribes :reload, "template[/etc/init.d/etcd]", :immediately	
-end

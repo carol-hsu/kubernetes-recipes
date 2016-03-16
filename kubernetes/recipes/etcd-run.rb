@@ -1,4 +1,4 @@
 service 'etcd' do
-	action :start
+	action [:enable,:start]
 end
 
